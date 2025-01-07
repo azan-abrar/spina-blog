@@ -4,7 +4,7 @@ module Spina
   module Blog
     # Spina::Blog::PostDecorator
     class PostDecorator < Draper::Decorator
-      delegate_all
+      #delegate_all
 
       def published_date
         l model.published_at.to_date, format: :long
